@@ -18,23 +18,9 @@ main();
 
 async function main(bAuth = true) {
     try {
-        const arrSlugs = await csv().fromFile('our-zips.csv');
-
-        console.log(arrSlugs)
-        for (let item of arrSlugs) {
-            getResponse()
-        }
-        return;
-        if (arr.length > 0) {
-            for (let i = 0; i < arr.length; i++) {
-                console.log(arr[i]);
-                await getResponse(strSlug);
-            }
-        }
-
         let objDate = getDate();
         let objUserAgent = new userAgent();
-        let strSlug = "4919-SW-46th-St-Gainesville-FL-32608";
+        let strSlug = "150-W-70TH-ST-CHICAGO-IL-60621";
 
         if (!bAuth) {
             let strTokenResponse = await axios.get("https://www.comehome.com/property-details/" + strSlug);
@@ -78,11 +64,13 @@ async function main(bAuth = true) {
             exportData(response.data.data.propertyLookup);
         }
     } catch (error) {
-        console.log(error.response.status);
         console.log(error.message);
+        if (error.response) {
+            console.log(error.response.status);
 
-        if (error.response.status == 401) {
-            main(false);
+            if (error.response.status == 401) {
+                await main(false);
+            }
         }
     }
 
@@ -109,6 +97,7 @@ function getDate() {
 
 function exportData(data) {
 
+    console.log(data);
     let strData = JSON.stringify(data);
     fs.appendFile("results.json", strData, function(err) {
         if (err) throw err;
@@ -116,41 +105,41 @@ function exportData(data) {
 
     let csvResult = [];
     let objResult = {};
-    objResult.data__propertyLookup__address__slug = data.address.slug;
-    objResult.data__propertyLookup__address__fullAddress = data.address.fullAddress;
-    objResult.data__propertyLookup__address__hcAddressId = data.address.hcAddressId;
-    objResult.data__propertyLookup__address__streetAddress = data.address.streetAddress;
-    objResult.data__propertyLookup__address__unit = data.address.unit;
-    objResult.data__propertyLookup__address__city = data.address.city;
-    objResult.data__propertyLookup__address__state = data.address.state;
-    objResult.data__propertyLookup__address__zipcode = data.address.zipcode;
-    objResult.data__propertyLookup__address__zipcodePlus4 = data.address.zipcodePlus4;
+    objResult.data__propertyLookup__address__slug = data.address ? data.address.slug : null;
+    objResult.data__propertyLookup__address__fullAddress = data.address ? data.address.fullAddress : null;
+    objResult.data__propertyLookup__address__hcAddressId = data.address ? data.address.hcAddressId : null;
+    objResult.data__propertyLookup__address__streetAddress = data.address ? data.address.streetAddress : null;
+    objResult.data__propertyLookup__address__unit = data.address ? data.address.unit : null;
+    objResult.data__propertyLookup__address__city = data.address ? data.address.city : null;
+    objResult.data__propertyLookup__address__state = data.address ? data.address.state : null;
+    objResult.data__propertyLookup__address__zipcode = data.address ? data.address.zipcode : null;
+    objResult.data__propertyLookup__address__zipcodePlus4 = data.address ? data.address.zipcodePlus4 : null;
 
-    objResult.data__propertyLookup__avm__priceUpper = data.avm.priceUpper;
-    objResult.data__propertyLookup__avm__priceLower = data.avm.priceLower;
-    objResult.data__propertyLookup__avm__fsd = data.avm.fsd;
-    objResult.data__propertyLookup__avm__quality = data.avm.quality;
-    objResult.data__propertyLookup__avm__priceMean = data.avm.priceMean;
+    objResult.data__propertyLookup__avm__priceUpper = data.avm ? data.avm.priceUpper : null;
+    objResult.data__propertyLookup__avm__priceLower = data.avm ? data.avm.priceLower : null;
+    objResult.data__propertyLookup__avm__fsd = data.avm ? data.avm.fsd : null;
+    objResult.data__propertyLookup__avm__quality = data.avm ? data.avm.quality : null;
+    objResult.data__propertyLookup__avm__priceMean = data.avm ? data.avm.priceMean : null;
 
-    objResult.data__propertyLookup__livingSpace__bedrooms__count = data.livingSpace.bedrooms.count;
-    objResult.data__propertyLookup__livingSpace__bathrooms__summaryCount = data.livingSpace.bathrooms.summaryCount;
+    objResult.data__propertyLookup__livingSpace__bedrooms__count = data.livingSpace.bedrooms ? data.livingSpace.bedrooms.count : null;
+    objResult.data__propertyLookup__livingSpace__bathrooms__summaryCount = data.livingSpace.bathrooms ? data.livingSpace.bathrooms.summaryCount : null;
 
-    objResult.data__propertyLookup__rentalAvm__priceMean = data.rentalAvm.priceMean;
-    objResult.data__propertyLookup__rentalAvm__priceUpper = data.rentalAvm.priceUpper;
-    objResult.data__propertyLookup__rentalAvm__priceLower = data.rentalAvm.priceLower;
-    objResult.data__propertyLookup__rentalAvm__fsd = data.rentalAvm.fsd;
-    objResult.data__propertyLookup__rentalAvm__quality = data.rentalAvm.quality;
+    objResult.data__propertyLookup__rentalAvm__priceMean = data.rentalAvm ? data.rentalAvm.priceMean : null;
+    objResult.data__propertyLookup__rentalAvm__priceUpper = data.rentalAvm ? data.rentalAvm.priceUpper : null;
+    objResult.data__propertyLookup__rentalAvm__priceLower = data.rentalAvm ? data.rentalAvm.priceLower : null;
+    objResult.data__propertyLookup__rentalAvm__fsd = data.rentalAvm ? data.rentalAvm.fsd : null;
+    objResult.data__propertyLookup__rentalAvm__quality = data.rentalAvm ? data.rentalAvm.quality : null;
 
     objResult.data__propertyLookup__rentalYield = data.rentalYield;
-    objResult.data__propertyLookup__latestAssessment__taxSummary__amount = data.latestAssessment.taxSummary.amount;
-    objResult.data__propertyLookup__latestAssessment__taxSummary__year = data.latestAssessment.taxSummary.year;
+    objResult.data__propertyLookup__latestAssessment__taxSummary__amount = data.latestAssessment ? data.latestAssessment.taxSummary.amount : null;
+    objResult.data__propertyLookup__latestAssessment__taxSummary__year = data.latestAssessment ? data.latestAssessment.taxSummary.year : null;
 
     csvResult.push(objResult);
     console.log(csvResult)
 
-    const csvData = json2csvParser.parse(csvResult);
-    fs.writeFile("results.csv", csvData, function(error) {
-        if (error) throw error;
-        console.log("Write to results.csv successfully!");
-    });
+    // const csvData = json2csvParser.parse(csvResult);
+    // fs.writeFile("results.csv", csvData, function(error) {
+    //     if (error) throw error;
+    //     console.log("Write to results.csv successfully!");
+    // });
 }

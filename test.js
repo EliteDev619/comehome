@@ -1,0 +1,26 @@
+const Json2csvParser = require("json2csv").Parser;
+const fs = require('fs');
+
+const csvFields = ['name', 'capital', 'countryCode', 'phoneIndicator'];
+console.log(csvFields);
+const json2csvParser = new Json2csvParser({
+    csvFields
+});
+
+const data = [
+    { name: 'Cameroon', capital: 'Yaounde', countryCode: 'CM', phoneIndicator: 237 },
+    { name: 'France', capital: 'Paris', countryCode: 'FR', phoneIndicator: 33 },
+    { name: 'United States', capital: 'Washington, D.C.', countryCode: 'US', phoneIndicator: 1 },
+    { name: 'India', capital: 'New Delhi', countryCode: 'IN', phoneIndicator: 91 },
+    { name: 'Brazil', capital: 'Brasília', countryCode: 'BR', phoneIndicator: 55 },
+    { name: 'Japan', capital: 'Tokyo', countryCode: 'JP', phoneIndicator: 81 },
+    { name: 'Australia', capital: 'Canberra', countryCode: 'AUS', phoneIndicator: 61 },
+    { name: 'Nigeria', capital: 'Abuja', countryCode: 'NG', phoneIndicator: 234 },
+    { name: 'Germany', capital: 'Berlin', countryCode: 'DE', phoneIndicator: 49 },
+];
+
+const csvData = json2csvParser.parse(data);
+fs.writeFile("results.csv", csvData, function(error) {
+    if (error) throw error;
+    console.log("Write to results.csv successfully!");
+});

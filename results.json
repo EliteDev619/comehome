@@ -1,1 +1,995 @@
-{"address":{"slug":"4919-SW-46th-St-Gainesville-FL-32608","fullAddress":"4919 SW 46th St Gainesville FL 32608","hcAddressId":2569579,"streetAddress":"4919 SW 46th St","unit":"","city":"Gainesville","state":"FL","zipcode":"32608","zipcodePlus4":"4906"},"association":null,"avm":{"priceUpper":275407,"priceLower":190319,"fsd":0.1826997,"quality":"LOW","priceMean":232863},"bestPhotos":null,"block":{"valueTs":[{"adjustedValue":232863,"month":"2018-05-01"},{"adjustedValue":234024.11600691974,"month":"2018-06-01"},{"adjustedValue":235208.92825887862,"month":"2018-07-01"},{"adjustedValue":236441.13300091587,"month":"2018-08-01"},{"adjustedValue":237744.4264780706,"month":"2018-09-01"},{"adjustedValue":239024.02371018627,"month":"2018-10-01"},{"adjustedValue":240374.70967741933,"month":"2018-11-01"},{"adjustedValue":241701.6993996133,"month":"2018-12-01"},{"adjustedValue":243123.47410196398,"month":"2019-01-01"},{"adjustedValue":244592.64129439302,"month":"2019-02-01"},{"adjustedValue":246014.41599674363,"month":"2019-03-01"},{"adjustedValue":247720.54563956446,"month":"2019-04-01"},{"adjustedValue":249450.37152742446,"month":"2019-05-01"},{"adjustedValue":251346.07113055864,"month":"2019-06-01"},{"adjustedValue":253289.16322377123,"month":"2019-07-01"},{"adjustedValue":255398.1290322581,"month":"2019-08-01"},{"adjustedValue":257625.57606594078,"month":"2019-09-01"},{"adjustedValue":259876.71934466268,"month":"2019-10-01"},{"adjustedValue":262293.73633865884,"month":"2019-11-01"},{"adjustedValue":264734.4495776941,"month":"2019-12-01"},{"adjustedValue":267341.03653200367,"month":"2020-01-01"},{"adjustedValue":270066.1047115091,"month":"2020-02-01"},{"adjustedValue":272696.38791085785,"month":"2020-03-01"},{"adjustedValue":275658.4185407551,"month":"2020-04-01"},{"adjustedValue":278644.1454156915,"month":"2020-05-01"},{"adjustedValue":281819.4422509413,"month":"2020-06-01"},{"adjustedValue":284971.042841152,"month":"2020-07-01"},{"adjustedValue":288312.21339167596,"month":"2020-08-01"},{"adjustedValue":291677.0801872393,"month":"2020-09-01"},{"adjustedValue":294994.5544927241,"month":"2020-10-01"},{"adjustedValue":298454.20626844413,"month":"2020-11-01"},{"adjustedValue":301795.37681896816,"month":"2020-12-01"},{"adjustedValue":305255.0285946881,"month":"2021-01-01"},{"adjustedValue":308690.98412536894,"month":"2021-02-01"},{"adjustedValue":311747.7997354228,"month":"2021-03-01"},{"adjustedValue":315136.3627760253,"month":"2021-04-01"},{"adjustedValue":318382.74834639265,"month":"2021-05-01"},{"adjustedValue":321723.9188969167,"month":"2021-06-01"},{"adjustedValue":324946.60822224483,"month":"2021-07-01"},{"adjustedValue":328264.08252772974,"month":"2021-08-01"},{"adjustedValue":331581.55683321465,"month":"2021-09-01"},{"adjustedValue":334780.54991350364,"month":"2021-10-01"},{"adjustedValue":338121.72046402766,"month":"2021-11-01"},{"adjustedValue":341344.40978935594,"month":"2021-12-01"},{"adjustedValue":344685.58033987996,"month":"2022-01-01"},{"adjustedValue":348074.14338048233,"month":"2022-02-01"},{"adjustedValue":351130.95899053634,"month":"2022-03-01"},{"adjustedValue":354543.21827617794,"month":"2022-04-01"},{"adjustedValue":357860.6925816628,"month":"2022-05-01"},{"adjustedValue":361296.64811234357,"month":"2022-06-01"},{"adjustedValue":364637.8186628676,"month":"2022-07-01"},{"adjustedValue":368073.7741935484,"month":"2022-08-01"},{"adjustedValue":371533.4259692683,"month":"2022-09-01"},{"adjustedValue":374874.5965197924,"month":"2022-10-01"},{"adjustedValue":378334.2482955124,"month":"2022-11-01"},{"adjustedValue":381675.4188460364,"month":"2022-12-01"},{"adjustedValue":385135.07062175643,"month":"2023-01-01"},{"adjustedValue":388594.7223974764,"month":"2023-02-01"},{"adjustedValue":391698.9304976087,"month":"2023-03-01"},{"adjustedValue":394660.9611275059,"month":"2023-04-01"},{"adjustedValue":397480.8142871681,"month":"2023-05-01"},{"adjustedValue":400182.18622163427,"month":"2023-06-01"},{"adjustedValue":402765.07693090464,"month":"2023-07-01"},{"adjustedValue":405229.4864149791,"month":"2023-08-01"},{"adjustedValue":407551.7184288186,"month":"2023-09-01"},{"adjustedValue":409802.86170754046,"month":"2023-10-01"},{"adjustedValue":411911.8275160273,"month":"2023-11-01"},{"adjustedValue":413926.0083443574,"month":"2023-12-01"},{"adjustedValue":415845.40419253084,"month":"2024-01-01"},{"adjustedValue":417670.0150605475,"month":"2024-02-01"},{"adjustedValue":419399.8409484075,"month":"2024-03-01"}],"crime":{"all":{"nationPercentile":30,"countyPercentile":29},"property":{"nationPercentile":7,"countyPercentile":11},"violent":{"nationPercentile":13,"countyPercentile":18}},"valueTsForecastSummary":[{"year":2024,"value":247459.75604923445,"percent":6.2683878715100505}],"histograms":{"age":[{"count":7,"end":25,"start":0},{"count":7,"end":45,"start":30},{"count":32,"end":60,"start":45},{"count":23,"end":75,"start":60},{"count":9,"end":125,"start":75}],"baths":[{"count":41,"end":1.5,"start":1},{"count":3,"end":2,"start":1.5},{"count":31,"end":2.5,"start":2},{"count":3,"end":3,"start":2.5}],"beds":[{"count":6,"end":2,"start":1},{"count":26,"end":3,"start":2},{"count":36,"end":4,"start":3},{"count":9,"end":5,"start":4},{"count":1,"end":6,"start":5}],"buildingArea":[{"count":2,"end":500,"start":250},{"count":23,"end":1000,"start":500},{"count":33,"end":1500,"start":1000},{"count":15,"end":2000,"start":1500},{"count":6,"end":2500,"start":2000}],"valuePerSqft":[{"count":7,"end":120,"start":60},{"count":29,"end":160,"start":120},{"count":31,"end":200,"start":160},{"count":8,"end":240,"start":200},{"count":4,"end":320,"start":240}]}},"hcBuildingId":null,"comps":[],"county":{"name":"Alachua"},"geoLocation":{"latitude":29.60818,"longitude":-82.39207},"latestAssessment":{"taxSummary":{"amount":1185.73,"year":2022}},"latestListing":{"agentName":null,"agentEmail":null,"agentPhone":null,"agentLicense":null,"listingOfficeName":null,"buyerBrokerageCompensationDisplay":null,"openHouse":[],"publicRemarks":null,"status":"UNKNOWN","statusDate":null,"price":null,"listingID":null},"listDate":null,"listPrice":null,"livingSpace":{"numberOfRooms":null,"livingArea":1878,"bedrooms":{"count":5},"bathrooms":{"summaryCount":2}},"mls":null,"mlsState":"UNKNOWN","nearbyListings":[],"propertyType":"SINGLE_FAMILY_DETACHED","parcel":{"geometry":{"coordinates":[[[[-82.391893156,29.608503189],[-82.391887991,29.608101733],[-82.391887516,29.608063249],[-82.392251731,29.607872188],[-82.392257373,29.608312128],[-82.391893156,29.608503189]]]],"type":"MultiPolygon"}},"rentalAvm":{"priceMean":2073,"priceUpper":2293,"priceLower":1854,"fsd":0.1058852,"quality":"LOW"},"rentalYield":0.1068,"schools":[{"id":"FL-ALACHUA-2917-FL-PB9133","name":"KANAPAHA MIDDLE SCHOOL","levels":["MIDDLE"],"distanceMiles":1.7499690653697948,"score":58.8},{"id":"FL-ALACHUA-2917-FL-PB9117","name":"IDYLWILD ELEMENTARY SCHOOL","levels":["ELEMENTARY"],"distanceMiles":2.6447069710503417,"score":3.3},{"id":"FL-ALACHUA-2917-FL-PB9132","name":"FEARNSIDE FAMILY SERVICES CENTER","levels":["ELEMENTARY"],"distanceMiles":7.395549787358608,"score":null}],"schoolsSummary":"<span class='summary'>The closest schools range from <strong>below average</strong> to <strong>average</strong>.</span>","site":{"area":21780,"areaDescription":"0.5 Acres","zoning":{"code":"R-1A"}},"structure":{"yearBuilt":1948,"stories":1},"transfers":[{"transferDate":"2018-04-04","transferPrice":null,"eventType":"OTHER"}],"zip":{"hpi":[{"adjustedValue":146348.55224350025,"month":"2018-05-01"},{"adjustedValue":146993.4326074608,"month":"2018-06-01"},{"adjustedValue":147314.50557076908,"month":"2018-07-01"},{"adjustedValue":147287.50398576542,"month":"2018-08-01"},{"adjustedValue":147445.83201794335,"month":"2018-09-01"},{"adjustedValue":148110.80835395414,"month":"2018-10-01"},{"adjustedValue":148366.15425807372,"month":"2018-11-01"},{"adjustedValue":148225.07670414462,"month":"2018-12-01"},{"adjustedValue":148750.57225072588,"month":"2019-01-01"},{"adjustedValue":149930.1614749407,"month":"2019-02-01"},{"adjustedValue":151183.9163001956,"month":"2019-03-01"},{"adjustedValue":152313.57646491975,"month":"2019-04-01"},{"adjustedValue":153405.58062040023,"month":"2019-05-01"},{"adjustedValue":154124.05468836753,"month":"2019-06-01"},{"adjustedValue":154443.74862778987,"month":"2019-07-01"},{"adjustedValue":154948.68911066567,"month":"2019-08-01"},{"adjustedValue":155663.63822918193,"month":"2019-09-01"},{"adjustedValue":156265.6306879509,"month":"2019-10-01"},{"adjustedValue":156754.6385042432,"month":"2019-11-01"},{"adjustedValue":157702.26751602034,"month":"2019-12-01"},{"adjustedValue":158910.40262212063,"month":"2020-01-01"},{"adjustedValue":160492.40710632873,"month":"2020-02-01"},{"adjustedValue":162300.54877186703,"month":"2020-03-01"},{"adjustedValue":163546.5401386187,"month":"2020-04-01"},{"adjustedValue":164328.21494998108,"month":"2020-05-01"},{"adjustedValue":165861.6720219654,"month":"2020-06-01"},{"adjustedValue":168744.13625580966,"month":"2020-07-01"},{"adjustedValue":171978.66957259557,"month":"2020-08-01"},{"adjustedValue":174932.68739457728,"month":"2020-09-01"},{"adjustedValue":178037.23918412338,"month":"2020-10-01"},{"adjustedValue":180187.78015065598,"month":"2020-11-01"},{"adjustedValue":180874.16852146172,"month":"2020-12-01"},{"adjustedValue":182227.9476131541,"month":"2021-01-01"},{"adjustedValue":185427.2629160001,"month":"2021-02-01"},{"adjustedValue":189977.52318472083,"month":"2021-03-01"},{"adjustedValue":195854.88888274113,"month":"2021-04-01"},{"adjustedValue":203481.3736741964,"month":"2021-05-01"},{"adjustedValue":211244.08538832178,"month":"2021-06-01"},{"adjustedValue":216652.81819493428,"month":"2021-07-01"},{"adjustedValue":220701.0962799588,"month":"2021-08-01"},{"adjustedValue":223654.12508734636,"month":"2021-09-01"},{"adjustedValue":226090.62943632394,"month":"2021-10-01"},{"adjustedValue":229590.55358264354,"month":"2021-11-01"},{"adjustedValue":233626.1703570499,"month":"2021-12-01"},{"adjustedValue":238539.4488260719,"month":"2022-01-01"},{"adjustedValue":245329.55082115936,"month":"2022-02-01"},{"adjustedValue":254100.42256317486,"month":"2022-03-01"},{"adjustedValue":263488.6965032862,"month":"2022-04-01"},{"adjustedValue":270704.96847229346,"month":"2022-05-01"},{"adjustedValue":273507.0287053497,"month":"2022-06-01"},{"adjustedValue":271935.5728356859,"month":"2022-07-01"},{"adjustedValue":268307.60758952214,"month":"2022-08-01"},{"adjustedValue":265178.4511106423,"month":"2022-09-01"},{"adjustedValue":261073.00343488055,"month":"2022-10-01"},{"adjustedValue":255391.065621534,"month":"2022-11-01"},{"adjustedValue":250201.07818337396,"month":"2022-12-01"},{"adjustedValue":245450.0942984301,"month":"2023-01-01"},{"adjustedValue":240420.51610795123,"month":"2023-02-01"},{"adjustedValue":235866.47030061137,"month":"2023-03-01"},{"adjustedValue":232863,"month":"2023-04-01"},{"adjustedValue":231578.9801039188,"month":"2023-05-01"},{"adjustedValue":231219.8619965353,"month":"2023-06-01"},{"adjustedValue":231062.5946846958,"month":"2023-07-01"},{"adjustedValue":230944.87134187794,"month":"2023-08-01"},{"adjustedValue":230880.28457891446,"month":"2023-09-01"},{"adjustedValue":230698.89353090376,"month":"2023-10-01"},{"adjustedValue":230151.67464166234,"month":"2023-11-01"},{"adjustedValue":229264.11230758135,"month":"2023-12-01"},{"adjustedValue":228452.3849192444,"month":"2024-01-01"},{"adjustedValue":228211.11257912018,"month":"2024-02-01"},{"adjustedValue":228740.89123222863,"month":"2024-03-01"},{"adjustedValue":229897.96485275563,"month":"2024-04-01"},{"adjustedValue":231415.33797652528,"month":"2024-05-01"},{"adjustedValue":233093.42378569857,"month":"2024-06-01"},{"adjustedValue":234781.06657144116,"month":"2024-07-01"},{"adjustedValue":236254.37826430274,"month":"2024-08-01"},{"adjustedValue":237215.6357397849,"month":"2024-09-01"},{"adjustedValue":237459.86550462837,"month":"2024-10-01"},{"adjustedValue":237037.58163226166,"month":"2024-11-01"},{"adjustedValue":236241.42488394587,"month":"2024-12-01"},{"adjustedValue":235432.8953969095,"month":"2025-01-01"},{"adjustedValue":234872.48265072997,"month":"2025-02-01"},{"adjustedValue":234674.8117753984,"month":"2025-03-01"},{"adjustedValue":234860.3241547817,"month":"2025-04-01"},{"adjustedValue":235396.62103493264,"month":"2025-05-01"},{"adjustedValue":236180.69623980607,"month":"2025-06-01"},{"adjustedValue":237013.63890937154,"month":"2025-07-01"},{"adjustedValue":237640.68203222498,"month":"2025-08-01"},{"adjustedValue":237856.85911078966,"month":"2025-09-01"},{"adjustedValue":237602.47248961427,"month":"2025-10-01"},{"adjustedValue":236977.49659089933,"month":"2025-11-01"},{"adjustedValue":236177.56217410712,"month":"2025-12-01"},{"adjustedValue":235412.44264505868,"month":"2026-01-01"},{"adjustedValue":234857.21544843135,"month":"2026-02-01"},{"adjustedValue":234634.90840319532,"month":"2026-03-01"}],"hpiForecastSummary":[{"year":2024,"value":228740.89123222863,"percent":-1.7701862330088414},{"year":2025,"value":234674.8117753984,"percent":0.7780591057396036},{"year":2026,"value":234634.90840319532,"percent":0.760923119256951}]},"floodZone":{"effectiveDate":"2021-09-24","floodRisk":"low","floodRiskDisplay":"No","panelNumber":"12001C0435E","zone":"X"},"paymentEstimate":{"associationFee":null,"pmi":null,"loan":null,"tax":null,"total":null}}
+{
+    "address": {
+        "slug": "4919-SW-46th-St-Gainesville-FL-32608",
+        "fullAddress": "4919 SW 46th St Gainesville FL 32608",
+        "hcAddressId": 2569579,
+        "streetAddress": "4919 SW 46th St",
+        "unit": "",
+        "city": "Gainesville",
+        "state": "FL",
+        "zipcode": "32608",
+        "zipcodePlus4": "4906"
+    },
+    "association": null,
+    "avm": {
+        "priceUpper": 275407,
+        "priceLower": 190319,
+        "fsd": 0.1826997,
+        "quality": "LOW",
+        "priceMean": 232863
+    },
+    "bestPhotos": null,
+    "block": {
+        "valueTs": [{
+                "adjustedValue": 232863,
+                "month": "2018-05-01"
+            },
+            {
+                "adjustedValue": 234024.11600691974,
+                "month": "2018-06-01"
+            },
+            {
+                "adjustedValue": 235208.92825887862,
+                "month": "2018-07-01"
+            },
+            {
+                "adjustedValue": 236441.13300091587,
+                "month": "2018-08-01"
+            },
+            {
+                "adjustedValue": 237744.4264780706,
+                "month": "2018-09-01"
+            },
+            {
+                "adjustedValue": 239024.02371018627,
+                "month": "2018-10-01"
+            },
+            {
+                "adjustedValue": 240374.70967741933,
+                "month": "2018-11-01"
+            },
+            {
+                "adjustedValue": 241701.6993996133,
+                "month": "2018-12-01"
+            },
+            {
+                "adjustedValue": 243123.47410196398,
+                "month": "2019-01-01"
+            },
+            {
+                "adjustedValue": 244592.64129439302,
+                "month": "2019-02-01"
+            },
+            {
+                "adjustedValue": 246014.41599674363,
+                "month": "2019-03-01"
+            },
+            {
+                "adjustedValue": 247720.54563956446,
+                "month": "2019-04-01"
+            },
+            {
+                "adjustedValue": 249450.37152742446,
+                "month": "2019-05-01"
+            },
+            {
+                "adjustedValue": 251346.07113055864,
+                "month": "2019-06-01"
+            },
+            {
+                "adjustedValue": 253289.16322377123,
+                "month": "2019-07-01"
+            },
+            {
+                "adjustedValue": 255398.1290322581,
+                "month": "2019-08-01"
+            },
+            {
+                "adjustedValue": 257625.57606594078,
+                "month": "2019-09-01"
+            },
+            {
+                "adjustedValue": 259876.71934466268,
+                "month": "2019-10-01"
+            },
+            {
+                "adjustedValue": 262293.73633865884,
+                "month": "2019-11-01"
+            },
+            {
+                "adjustedValue": 264734.4495776941,
+                "month": "2019-12-01"
+            },
+            {
+                "adjustedValue": 267341.03653200367,
+                "month": "2020-01-01"
+            },
+            {
+                "adjustedValue": 270066.1047115091,
+                "month": "2020-02-01"
+            },
+            {
+                "adjustedValue": 272696.38791085785,
+                "month": "2020-03-01"
+            },
+            {
+                "adjustedValue": 275658.4185407551,
+                "month": "2020-04-01"
+            },
+            {
+                "adjustedValue": 278644.1454156915,
+                "month": "2020-05-01"
+            },
+            {
+                "adjustedValue": 281819.4422509413,
+                "month": "2020-06-01"
+            },
+            {
+                "adjustedValue": 284971.042841152,
+                "month": "2020-07-01"
+            },
+            {
+                "adjustedValue": 288312.21339167596,
+                "month": "2020-08-01"
+            },
+            {
+                "adjustedValue": 291677.0801872393,
+                "month": "2020-09-01"
+            },
+            {
+                "adjustedValue": 294994.5544927241,
+                "month": "2020-10-01"
+            },
+            {
+                "adjustedValue": 298454.20626844413,
+                "month": "2020-11-01"
+            },
+            {
+                "adjustedValue": 301795.37681896816,
+                "month": "2020-12-01"
+            },
+            {
+                "adjustedValue": 305255.0285946881,
+                "month": "2021-01-01"
+            },
+            {
+                "adjustedValue": 308690.98412536894,
+                "month": "2021-02-01"
+            },
+            {
+                "adjustedValue": 311747.7997354228,
+                "month": "2021-03-01"
+            },
+            {
+                "adjustedValue": 315136.3627760253,
+                "month": "2021-04-01"
+            },
+            {
+                "adjustedValue": 318382.74834639265,
+                "month": "2021-05-01"
+            },
+            {
+                "adjustedValue": 321723.9188969167,
+                "month": "2021-06-01"
+            },
+            {
+                "adjustedValue": 324946.60822224483,
+                "month": "2021-07-01"
+            },
+            {
+                "adjustedValue": 328264.08252772974,
+                "month": "2021-08-01"
+            },
+            {
+                "adjustedValue": 331581.55683321465,
+                "month": "2021-09-01"
+            },
+            {
+                "adjustedValue": 334780.54991350364,
+                "month": "2021-10-01"
+            },
+            {
+                "adjustedValue": 338121.72046402766,
+                "month": "2021-11-01"
+            },
+            {
+                "adjustedValue": 341344.40978935594,
+                "month": "2021-12-01"
+            },
+            {
+                "adjustedValue": 344685.58033987996,
+                "month": "2022-01-01"
+            },
+            {
+                "adjustedValue": 348074.14338048233,
+                "month": "2022-02-01"
+            },
+            {
+                "adjustedValue": 351130.95899053634,
+                "month": "2022-03-01"
+            },
+            {
+                "adjustedValue": 354543.21827617794,
+                "month": "2022-04-01"
+            },
+            {
+                "adjustedValue": 357860.6925816628,
+                "month": "2022-05-01"
+            },
+            {
+                "adjustedValue": 361296.64811234357,
+                "month": "2022-06-01"
+            },
+            {
+                "adjustedValue": 364637.8186628676,
+                "month": "2022-07-01"
+            },
+            {
+                "adjustedValue": 368073.7741935484,
+                "month": "2022-08-01"
+            },
+            {
+                "adjustedValue": 371533.4259692683,
+                "month": "2022-09-01"
+            },
+            {
+                "adjustedValue": 374874.5965197924,
+                "month": "2022-10-01"
+            },
+            {
+                "adjustedValue": 378334.2482955124,
+                "month": "2022-11-01"
+            },
+            {
+                "adjustedValue": 381675.4188460364,
+                "month": "2022-12-01"
+            },
+            {
+                "adjustedValue": 385135.07062175643,
+                "month": "2023-01-01"
+            },
+            {
+                "adjustedValue": 388594.7223974764,
+                "month": "2023-02-01"
+            },
+            {
+                "adjustedValue": 391698.9304976087,
+                "month": "2023-03-01"
+            },
+            {
+                "adjustedValue": 394660.9611275059,
+                "month": "2023-04-01"
+            },
+            {
+                "adjustedValue": 397480.8142871681,
+                "month": "2023-05-01"
+            },
+            {
+                "adjustedValue": 400182.18622163427,
+                "month": "2023-06-01"
+            },
+            {
+                "adjustedValue": 402765.07693090464,
+                "month": "2023-07-01"
+            },
+            {
+                "adjustedValue": 405229.4864149791,
+                "month": "2023-08-01"
+            },
+            {
+                "adjustedValue": 407551.7184288186,
+                "month": "2023-09-01"
+            },
+            {
+                "adjustedValue": 409802.86170754046,
+                "month": "2023-10-01"
+            },
+            {
+                "adjustedValue": 411911.8275160273,
+                "month": "2023-11-01"
+            },
+            {
+                "adjustedValue": 413926.0083443574,
+                "month": "2023-12-01"
+            },
+            {
+                "adjustedValue": 415845.40419253084,
+                "month": "2024-01-01"
+            },
+            {
+                "adjustedValue": 417670.0150605475,
+                "month": "2024-02-01"
+            },
+            {
+                "adjustedValue": 419399.8409484075,
+                "month": "2024-03-01"
+            }
+        ],
+        "crime": {
+            "all": {
+                "nationPercentile": 30,
+                "countyPercentile": 29
+            },
+            "property": {
+                "nationPercentile": 7,
+                "countyPercentile": 11
+            },
+            "violent": {
+                "nationPercentile": 13,
+                "countyPercentile": 18
+            }
+        },
+        "valueTsForecastSummary": [{
+            "year": 2024,
+            "value": 247459.75604923445,
+            "percent": 6.2683878715100505
+        }],
+        "histograms": {
+            "age": [{
+                    "count": 7,
+                    "end": 25,
+                    "start": 0
+                },
+                {
+                    "count": 7,
+                    "end": 45,
+                    "start": 30
+                },
+                {
+                    "count": 32,
+                    "end": 60,
+                    "start": 45
+                },
+                {
+                    "count": 23,
+                    "end": 75,
+                    "start": 60
+                },
+                {
+                    "count": 9,
+                    "end": 125,
+                    "start": 75
+                }
+            ],
+            "baths": [{
+                    "count": 41,
+                    "end": 1.5,
+                    "start": 1
+                },
+                {
+                    "count": 3,
+                    "end": 2,
+                    "start": 1.5
+                },
+                {
+                    "count": 31,
+                    "end": 2.5,
+                    "start": 2
+                },
+                {
+                    "count": 3,
+                    "end": 3,
+                    "start": 2.5
+                }
+            ],
+            "beds": [{
+                    "count": 6,
+                    "end": 2,
+                    "start": 1
+                },
+                {
+                    "count": 26,
+                    "end": 3,
+                    "start": 2
+                },
+                {
+                    "count": 36,
+                    "end": 4,
+                    "start": 3
+                },
+                {
+                    "count": 9,
+                    "end": 5,
+                    "start": 4
+                },
+                {
+                    "count": 1,
+                    "end": 6,
+                    "start": 5
+                }
+            ],
+            "buildingArea": [{
+                    "count": 2,
+                    "end": 500,
+                    "start": 250
+                },
+                {
+                    "count": 23,
+                    "end": 1000,
+                    "start": 500
+                },
+                {
+                    "count": 33,
+                    "end": 1500,
+                    "start": 1000
+                },
+                {
+                    "count": 15,
+                    "end": 2000,
+                    "start": 1500
+                },
+                {
+                    "count": 6,
+                    "end": 2500,
+                    "start": 2000
+                }
+            ],
+            "valuePerSqft": [{
+                    "count": 7,
+                    "end": 120,
+                    "start": 60
+                },
+                {
+                    "count": 29,
+                    "end": 160,
+                    "start": 120
+                },
+                {
+                    "count": 31,
+                    "end": 200,
+                    "start": 160
+                },
+                {
+                    "count": 8,
+                    "end": 240,
+                    "start": 200
+                },
+                {
+                    "count": 4,
+                    "end": 320,
+                    "start": 240
+                }
+            ]
+        }
+    },
+    "hcBuildingId": null,
+    "comps": [],
+    "county": {
+        "name": "Alachua"
+    },
+    "geoLocation": {
+        "latitude": 29.60818,
+        "longitude": -82.39207
+    },
+    "latestAssessment": {
+        "taxSummary": {
+            "amount": 1185.73,
+            "year": 2022
+        }
+    },
+    "latestListing": {
+        "agentName": null,
+        "agentEmail": null,
+        "agentPhone": null,
+        "agentLicense": null,
+        "listingOfficeName": null,
+        "buyerBrokerageCompensationDisplay": null,
+        "openHouse": [],
+        "publicRemarks": null,
+        "status": "UNKNOWN",
+        "statusDate": null,
+        "price": null,
+        "listingID": null
+    },
+    "listDate": null,
+    "listPrice": null,
+    "livingSpace": {
+        "numberOfRooms": null,
+        "livingArea": 1878,
+        "bedrooms": {
+            "count": 5
+        },
+        "bathrooms": {
+            "summaryCount": 2
+        }
+    },
+    "mls": null,
+    "mlsState": "UNKNOWN",
+    "nearbyListings": [],
+    "propertyType": "SINGLE_FAMILY_DETACHED",
+    "parcel": {
+        "geometry": {
+            "coordinates": [
+                [
+                    [
+                        [-82.391893156,
+                            29.608503189
+                        ],
+                        [-82.391887991,
+                            29.608101733
+                        ],
+                        [-82.391887516,
+                            29.608063249
+                        ],
+                        [-82.392251731,
+                            29.607872188
+                        ],
+                        [-82.392257373,
+                            29.608312128
+                        ],
+                        [-82.391893156,
+                            29.608503189
+                        ]
+                    ]
+                ]
+            ],
+            "type": "MultiPolygon"
+        }
+    },
+    "rentalAvm": {
+        "priceMean": 2073,
+        "priceUpper": 2293,
+        "priceLower": 1854,
+        "fsd": 0.1058852,
+        "quality": "LOW"
+    },
+    "rentalYield": 0.1068,
+    "schools": [{
+            "id": "FL-ALACHUA-2917-FL-PB9133",
+            "name": "KANAPAHA MIDDLE SCHOOL",
+            "levels": [
+                "MIDDLE"
+            ],
+            "distanceMiles": 1.7499690653697948,
+            "score": 58.8
+        },
+        {
+            "id": "FL-ALACHUA-2917-FL-PB9117",
+            "name": "IDYLWILD ELEMENTARY SCHOOL",
+            "levels": [
+                "ELEMENTARY"
+            ],
+            "distanceMiles": 2.6447069710503417,
+            "score": 3.3
+        },
+        {
+            "id": "FL-ALACHUA-2917-FL-PB9132",
+            "name": "FEARNSIDE FAMILY SERVICES CENTER",
+            "levels": [
+                "ELEMENTARY"
+            ],
+            "distanceMiles": 7.395549787358608,
+            "score": null
+        }
+    ],
+    "schoolsSummary": "<span class='summary'>The closest schools range from <strong>below average</strong> to <strong>average</strong>.</span>",
+    "site": {
+        "area": 21780,
+        "areaDescription": "0.5 Acres",
+        "zoning": {
+            "code": "R-1A"
+        }
+    },
+    "structure": {
+        "yearBuilt": 1948,
+        "stories": 1
+    },
+    "transfers": [{
+        "transferDate": "2018-04-04",
+        "transferPrice": null,
+        "eventType": "OTHER"
+    }],
+    "zip": {
+        "hpi": [{
+                "adjustedValue": 146348.55224350025,
+                "month": "2018-05-01"
+            },
+            {
+                "adjustedValue": 146993.4326074608,
+                "month": "2018-06-01"
+            },
+            {
+                "adjustedValue": 147314.50557076908,
+                "month": "2018-07-01"
+            },
+            {
+                "adjustedValue": 147287.50398576542,
+                "month": "2018-08-01"
+            },
+            {
+                "adjustedValue": 147445.83201794335,
+                "month": "2018-09-01"
+            },
+            {
+                "adjustedValue": 148110.80835395414,
+                "month": "2018-10-01"
+            },
+            {
+                "adjustedValue": 148366.15425807372,
+                "month": "2018-11-01"
+            },
+            {
+                "adjustedValue": 148225.07670414462,
+                "month": "2018-12-01"
+            },
+            {
+                "adjustedValue": 148750.57225072588,
+                "month": "2019-01-01"
+            },
+            {
+                "adjustedValue": 149930.1614749407,
+                "month": "2019-02-01"
+            },
+            {
+                "adjustedValue": 151183.9163001956,
+                "month": "2019-03-01"
+            },
+            {
+                "adjustedValue": 152313.57646491975,
+                "month": "2019-04-01"
+            },
+            {
+                "adjustedValue": 153405.58062040023,
+                "month": "2019-05-01"
+            },
+            {
+                "adjustedValue": 154124.05468836753,
+                "month": "2019-06-01"
+            },
+            {
+                "adjustedValue": 154443.74862778987,
+                "month": "2019-07-01"
+            },
+            {
+                "adjustedValue": 154948.68911066567,
+                "month": "2019-08-01"
+            },
+            {
+                "adjustedValue": 155663.63822918193,
+                "month": "2019-09-01"
+            },
+            {
+                "adjustedValue": 156265.6306879509,
+                "month": "2019-10-01"
+            },
+            {
+                "adjustedValue": 156754.6385042432,
+                "month": "2019-11-01"
+            },
+            {
+                "adjustedValue": 157702.26751602034,
+                "month": "2019-12-01"
+            },
+            {
+                "adjustedValue": 158910.40262212063,
+                "month": "2020-01-01"
+            },
+            {
+                "adjustedValue": 160492.40710632873,
+                "month": "2020-02-01"
+            },
+            {
+                "adjustedValue": 162300.54877186703,
+                "month": "2020-03-01"
+            },
+            {
+                "adjustedValue": 163546.5401386187,
+                "month": "2020-04-01"
+            },
+            {
+                "adjustedValue": 164328.21494998108,
+                "month": "2020-05-01"
+            },
+            {
+                "adjustedValue": 165861.6720219654,
+                "month": "2020-06-01"
+            },
+            {
+                "adjustedValue": 168744.13625580966,
+                "month": "2020-07-01"
+            },
+            {
+                "adjustedValue": 171978.66957259557,
+                "month": "2020-08-01"
+            },
+            {
+                "adjustedValue": 174932.68739457728,
+                "month": "2020-09-01"
+            },
+            {
+                "adjustedValue": 178037.23918412338,
+                "month": "2020-10-01"
+            },
+            {
+                "adjustedValue": 180187.78015065598,
+                "month": "2020-11-01"
+            },
+            {
+                "adjustedValue": 180874.16852146172,
+                "month": "2020-12-01"
+            },
+            {
+                "adjustedValue": 182227.9476131541,
+                "month": "2021-01-01"
+            },
+            {
+                "adjustedValue": 185427.2629160001,
+                "month": "2021-02-01"
+            },
+            {
+                "adjustedValue": 189977.52318472083,
+                "month": "2021-03-01"
+            },
+            {
+                "adjustedValue": 195854.88888274113,
+                "month": "2021-04-01"
+            },
+            {
+                "adjustedValue": 203481.3736741964,
+                "month": "2021-05-01"
+            },
+            {
+                "adjustedValue": 211244.08538832178,
+                "month": "2021-06-01"
+            },
+            {
+                "adjustedValue": 216652.81819493428,
+                "month": "2021-07-01"
+            },
+            {
+                "adjustedValue": 220701.0962799588,
+                "month": "2021-08-01"
+            },
+            {
+                "adjustedValue": 223654.12508734636,
+                "month": "2021-09-01"
+            },
+            {
+                "adjustedValue": 226090.62943632394,
+                "month": "2021-10-01"
+            },
+            {
+                "adjustedValue": 229590.55358264354,
+                "month": "2021-11-01"
+            },
+            {
+                "adjustedValue": 233626.1703570499,
+                "month": "2021-12-01"
+            },
+            {
+                "adjustedValue": 238539.4488260719,
+                "month": "2022-01-01"
+            },
+            {
+                "adjustedValue": 245329.55082115936,
+                "month": "2022-02-01"
+            },
+            {
+                "adjustedValue": 254100.42256317486,
+                "month": "2022-03-01"
+            },
+            {
+                "adjustedValue": 263488.6965032862,
+                "month": "2022-04-01"
+            },
+            {
+                "adjustedValue": 270704.96847229346,
+                "month": "2022-05-01"
+            },
+            {
+                "adjustedValue": 273507.0287053497,
+                "month": "2022-06-01"
+            },
+            {
+                "adjustedValue": 271935.5728356859,
+                "month": "2022-07-01"
+            },
+            {
+                "adjustedValue": 268307.60758952214,
+                "month": "2022-08-01"
+            },
+            {
+                "adjustedValue": 265178.4511106423,
+                "month": "2022-09-01"
+            },
+            {
+                "adjustedValue": 261073.00343488055,
+                "month": "2022-10-01"
+            },
+            {
+                "adjustedValue": 255391.065621534,
+                "month": "2022-11-01"
+            },
+            {
+                "adjustedValue": 250201.07818337396,
+                "month": "2022-12-01"
+            },
+            {
+                "adjustedValue": 245450.0942984301,
+                "month": "2023-01-01"
+            },
+            {
+                "adjustedValue": 240420.51610795123,
+                "month": "2023-02-01"
+            },
+            {
+                "adjustedValue": 235866.47030061137,
+                "month": "2023-03-01"
+            },
+            {
+                "adjustedValue": 232863,
+                "month": "2023-04-01"
+            },
+            {
+                "adjustedValue": 231578.9801039188,
+                "month": "2023-05-01"
+            },
+            {
+                "adjustedValue": 231219.8619965353,
+                "month": "2023-06-01"
+            },
+            {
+                "adjustedValue": 231062.5946846958,
+                "month": "2023-07-01"
+            },
+            {
+                "adjustedValue": 230944.87134187794,
+                "month": "2023-08-01"
+            },
+            {
+                "adjustedValue": 230880.28457891446,
+                "month": "2023-09-01"
+            },
+            {
+                "adjustedValue": 230698.89353090376,
+                "month": "2023-10-01"
+            },
+            {
+                "adjustedValue": 230151.67464166234,
+                "month": "2023-11-01"
+            },
+            {
+                "adjustedValue": 229264.11230758135,
+                "month": "2023-12-01"
+            },
+            {
+                "adjustedValue": 228452.3849192444,
+                "month": "2024-01-01"
+            },
+            {
+                "adjustedValue": 228211.11257912018,
+                "month": "2024-02-01"
+            },
+            {
+                "adjustedValue": 228740.89123222863,
+                "month": "2024-03-01"
+            },
+            {
+                "adjustedValue": 229897.96485275563,
+                "month": "2024-04-01"
+            },
+            {
+                "adjustedValue": 231415.33797652528,
+                "month": "2024-05-01"
+            },
+            {
+                "adjustedValue": 233093.42378569857,
+                "month": "2024-06-01"
+            },
+            {
+                "adjustedValue": 234781.06657144116,
+                "month": "2024-07-01"
+            },
+            {
+                "adjustedValue": 236254.37826430274,
+                "month": "2024-08-01"
+            },
+            {
+                "adjustedValue": 237215.6357397849,
+                "month": "2024-09-01"
+            },
+            {
+                "adjustedValue": 237459.86550462837,
+                "month": "2024-10-01"
+            },
+            {
+                "adjustedValue": 237037.58163226166,
+                "month": "2024-11-01"
+            },
+            {
+                "adjustedValue": 236241.42488394587,
+                "month": "2024-12-01"
+            },
+            {
+                "adjustedValue": 235432.8953969095,
+                "month": "2025-01-01"
+            },
+            {
+                "adjustedValue": 234872.48265072997,
+                "month": "2025-02-01"
+            },
+            {
+                "adjustedValue": 234674.8117753984,
+                "month": "2025-03-01"
+            },
+            {
+                "adjustedValue": 234860.3241547817,
+                "month": "2025-04-01"
+            },
+            {
+                "adjustedValue": 235396.62103493264,
+                "month": "2025-05-01"
+            },
+            {
+                "adjustedValue": 236180.69623980607,
+                "month": "2025-06-01"
+            },
+            {
+                "adjustedValue": 237013.63890937154,
+                "month": "2025-07-01"
+            },
+            {
+                "adjustedValue": 237640.68203222498,
+                "month": "2025-08-01"
+            },
+            {
+                "adjustedValue": 237856.85911078966,
+                "month": "2025-09-01"
+            },
+            {
+                "adjustedValue": 237602.47248961427,
+                "month": "2025-10-01"
+            },
+            {
+                "adjustedValue": 236977.49659089933,
+                "month": "2025-11-01"
+            },
+            {
+                "adjustedValue": 236177.56217410712,
+                "month": "2025-12-01"
+            },
+            {
+                "adjustedValue": 235412.44264505868,
+                "month": "2026-01-01"
+            },
+            {
+                "adjustedValue": 234857.21544843135,
+                "month": "2026-02-01"
+            },
+            {
+                "adjustedValue": 234634.90840319532,
+                "month": "2026-03-01"
+            }
+        ],
+        "hpiForecastSummary": [{
+                "year": 2024,
+                "value": 228740.89123222863,
+                "percent": -1.7701862330088414
+            },
+            {
+                "year": 2025,
+                "value": 234674.8117753984,
+                "percent": 0.7780591057396036
+            },
+            {
+                "year": 2026,
+                "value": 234634.90840319532,
+                "percent": 0.760923119256951
+            }
+        ]
+    },
+    "floodZone": {
+        "effectiveDate": "2021-09-24",
+        "floodRisk": "low",
+        "floodRiskDisplay": "No",
+        "panelNumber": "12001C0435E",
+        "zone": "X"
+    },
+    "paymentEstimate": {
+        "associationFee": null,
+        "pmi": null,
+        "loan": null,
+        "tax": null,
+        "total": null
+    }
+}

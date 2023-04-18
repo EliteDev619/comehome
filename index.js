@@ -53,15 +53,15 @@ async function getResponse(objSlug, bAuth = true) {
             objSlug.field3.split(" ").join('-') + '-' +
             objSlug.field4.split(" ").join('-');
 
-        console.log(strSlug);
+        // console.log(strSlug);
 
         if (!bAuth) {
-            console.log("Create token =====");
+            // console.log("Create token =====");
             let strTokenResponse = await axios.get("https://www.comehome.com/property-details/" + strSlug);
             strToken = strTokenResponse.data.split('status":"SUCCESS","token":"')[1].split('",')[0];
         }
 
-        console.log(strToken);
+        // console.log(strToken);
         let response = await axios.request("https://property-graph.comehome.com/graphql", {
             // httpsAgent: new HttpsProxyAgent(proxy_url),  /////// proxy
             "headers": {

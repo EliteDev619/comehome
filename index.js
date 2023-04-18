@@ -20,9 +20,10 @@ main();
 async function main() {
     const arrSlugs = await csv().fromFile('our-zips.csv');
 
-    for (let item of arrSlugs) {
-        ////////////////////// if you want to use proxy then follow this
-        // let sid = Math.floor(Math.random() * 10000000);
+    for (let i = 0; i < arrSlugs.length; i++) {
+        console.log("Executed Count ===>", i)
+            ////////////////////// if you want to use proxy then follow this
+            // let sid = Math.floor(Math.random() * 10000000);
 
         // Without sid-${sid} // it rotates automatically.
         // let proxy_url = "http://AirForceOne-sub-kamakazeevenuecart-cc-row:d7cmO5rk4Tj2@gw.ntnt.io:5959";

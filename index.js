@@ -1,5 +1,4 @@
 const axios = require("axios");
-const userAgent = require("user-agents");
 const fs = require("fs");
 const Json2csvParser = require("json2csv").Parser;
 const csv = require('csvtojson')
@@ -19,6 +18,8 @@ main();
 
 async function main() {
     const arrSlugs = await csv().fromFile('our-zips.csv');
+    console.log("File Imported Successfully!")
+    let objDate = getDate();
 
     for (let i = 0; i < arrSlugs.length; i++) {
         console.log("Executed Count ===>", i)
@@ -34,7 +35,7 @@ async function main() {
 
         // let proxy_url = "http://user:pass@domain:port"
         /// you can send it to getResponse using parameter
-        await getResponse(item);
+        await getResponse(arrSlugs[i], objDate);
     }
 
     const csvData = json2csvParser.parse(arrCSVResult);
@@ -44,10 +45,8 @@ async function main() {
     });
 }
 
-async function getResponse(objSlug, bAuth = true) {
+async function getResponse(objSlug, objDate, bAuth = true) {
     try {
-        let objDate = getDate();
-        let objUserAgent = new userAgent();
 
         let strSlug = objSlug.Address.split(" ").join('-') + '-' +
             objSlug.field2.split(" ").join('-') + '-' +
@@ -57,7 +56,6 @@ async function getResponse(objSlug, bAuth = true) {
         // console.log(strSlug);
 
         if (!bAuth) {
-            // console.log("Create token =====");
             let strTokenResponse = await axios.get("https://www.comehome.com/property-details/" + strSlug);
             strToken = strTokenResponse.data.split('status":"SUCCESS","token":"')[1].split('",')[0];
         }
@@ -81,7 +79,7 @@ async function getResponse(objSlug, bAuth = true) {
                 "x-graph-profile": "consumer",
                 "Referer": "https://www.comehome.com/",
                 "Referrer-Policy": "origin-when-cross-origin",
-                "user-agent": objUserAgent.toString()
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",
             },
             "data": JSON.stringify({
                 query: strQuery,
@@ -97,7 +95,11 @@ async function getResponse(objSlug, bAuth = true) {
 
         console.log(response.status);
         if (response.status == 200) {
-            exportData(response.data.data.propertyLookup);
+            if (response.data.data.propertyLookup == null) {
+                console.log("Response Data is null!");
+            } else {
+                exportData(response.data.data.propertyLookup);
+            }
         }
     } catch (error) {
 
@@ -106,7 +108,7 @@ async function getResponse(objSlug, bAuth = true) {
             console.log(error.response.status);
 
             if (error.response.status == 401) {
-                await getResponse(objSlug, false);
+                await getResponse(objSlug, objDate, false);
             }
         }
     }

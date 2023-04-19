@@ -1,51 +1,71 @@
 const axios = require("axios");
-const fs = require("fs");
-const Json2csvParser = require("json2csv").Parser;
-const csv = require('csvtojson')
-const HttpsProxyAgent = require("https-proxy-agent");
+// const fs = require("fs");
+// const Json2csvParser = require("json2csv").Parser;
+const csv = require('csvtojson');
+const ObjectsToCsv = require('objects-to-csv');
 
 let strQuery = "\n    query PropertyDetailsFull(\n      $slug: String\n      $dateFiveYearsAgo: Date\n      $dateOneYearAhead: Date\n      $dateThreeYearsAhead: Date\n    ) {\n      propertyLookup(id: { slug: $slug }) {\n        address {\n          slug\n          fullAddress\n          hcAddressId\n          streetAddress\n          unit\n          city\n          state\n          zipcode\n          zipcodePlus4\n        }\n        association {\n          name\n          fees {\n            amount\n            frequency\n            notes\n          }\n        }\n        avm(qualityMethod: CONSUMER) {\n          priceUpper\n          priceLower\n          fsd\n          quality\n          priceMean\n        }\n        bestPhotos(orderBy: MLS) {\n          id\n          storageUrl\n          prediction\n          confidence\n          representation {\n            httpUrl\n            height\n            width\n          }\n        }\n        block {\n          valueTs(start: $dateFiveYearsAgo, end: $dateOneYearAhead) {\n            adjustedValue\n            month\n          }\n          crime {\n            all {\n              nationPercentile\n              countyPercentile\n            }\n            property {\n              nationPercentile\n              countyPercentile\n            }\n            violent {\n              nationPercentile\n              countyPercentile\n            }\n          }\n          valueTsForecastSummary {\n            year\n            value\n            percent\n          }\n          histograms {\n            age(rebin: { bins: 5, method: TAILS }) {\n              count\n              end\n              start\n            }\n            baths(rebin: { bins: 5, method: TAILS }) {\n              count\n              end\n              start\n            }\n            beds(rebin: { bins: 5, method: TAILS }) {\n              count\n              end\n              start\n            }\n            buildingArea(rebin: { bins: 5, method: TAILS }) {\n              count\n              end\n              start\n            }\n            valuePerSqft(rebin: { bins: 5, method: TAILS }) {\n              count\n              end\n              start\n            }\n          }\n        }\n        hcBuildingId\n        comps(limit: 6, minScore: 85, includeActive: false) {\n          avm {\n            priceMean\n          }\n          address {\n            slug\n            fullAddress\n            hcAddressId\n            streetAddress\n            unit\n            city\n            state\n            zipcode\n            zipcodePlus4\n          }\n          bestPhotos(limit: 1, orderBy: MLS) {\n            id\n            storageUrl\n            prediction\n            confidence\n            representation {\n              httpUrl\n              height\n              width\n            }\n          }\n          geoLocation {\n            latitude\n            longitude\n          }\n          listPrice\n          livingSpace {\n            livingArea\n            bedrooms {\n              count\n            }\n            bathrooms {\n              summaryCount\n            }\n          }\n          mls {\n            regulations {\n              logoOverlay\n              photosLogoOverlay\n            }\n          }\n          propertyType\n          summary {\n            mlsState\n            listPrice\n            hcBuildingId\n            score {\n              default {\n                dollars\n                level\n                similarity\n              }\n            }\n          }\n        }\n        county {\n          name\n        }\n        geoLocation {\n          latitude\n          longitude\n        }\n        latestAssessment {\n          taxSummary {\n            amount\n            year\n          }\n        }\n        latestListing {\n          agentName\n          agentEmail\n          agentPhone\n          agentLicense\n          listingOfficeName\n          buyerBrokerageCompensationDisplay\n          openHouse(status: ACTIVE) {\n            appointmentRequired\n            date\n            description\n            directions\n            end\n            remarks\n            start\n          }\n          publicRemarks\n          status\n          statusDate\n          price\n          listingID\n        }\n        listDate\n        listPrice\n        livingSpace {\n          numberOfRooms\n          livingArea\n          bedrooms {\n            count\n          }\n          bathrooms {\n            summaryCount\n          }\n        }\n        mls {\n          mlsID\n          name\n          abbreviation\n          lastRefreshed\n          regulations {\n            copyrightStatement\n            disclaimer\n            logo\n            logoOverlay\n            photosClosedLogin\n            photosLogoOverlay\n          }\n        }\n        mlsState\n        nearbyListings(limit: 10, minScore: 85) {\n          address {\n            slug\n            fullAddress\n            hcAddressId\n            streetAddress\n            unit\n            city\n            state\n            zipcode\n            zipcodePlus4\n          }\n          avm {\n            priceMean\n          }\n          bestPhotos(limit: 6, orderBy: MLS) {\n            id\n            storageUrl\n            prediction\n            confidence\n            representation(size: SMALL) {\n              httpUrl\n              height\n              width\n            }\n          }\n          geoLocation {\n            latitude\n            longitude\n          }\n          summary {\n            baths\n            beds\n            latitude\n            longitude\n            listDate\n            listPrice\n            mlsState\n            mlsStateDate\n            sqft\n            propertyType\n          }\n          mls {\n            abbreviation\n            lastRefreshed\n            mlsID\n            name\n            regulations {\n              logoOverlay\n              photosLogoOverlay\n            }\n          }\n        }\n        propertyType\n        parcel {\n          geometry\n        }\n        rentalAvm(qualityMethod: CONSUMER) {\n          priceMean\n          priceUpper\n          priceLower\n          fsd\n          quality\n        }\n        rentalYield\n        schools {\n          id\n          name\n          levels\n          distanceMiles\n          score\n        }\n        schoolsSummary\n        site {\n          area(units: SQFT)\n          areaDescription\n          zoning {\n            code\n          }\n        }\n        structure {\n          yearBuilt\n          stories\n        }\n        transfers(order: DESCENDING) {\n          transferDate\n          transferPrice\n          eventType\n        }\n        zip {\n          hpi(start: $dateFiveYearsAgo, end: $dateThreeYearsAhead) {\n            adjustedValue\n            month\n          }\n          hpiForecastSummary {\n            year\n            value\n            percent\n          }\n        }\n        floodZone {\n          effectiveDate\n          floodRisk\n          floodRiskDisplay\n          panelNumber\n          zone\n        }\n        paymentEstimate {\n          associationFee\n          pmi\n          loan\n          tax\n          total\n        }\n      }\n    }\n  ";
 
-const csvFields = ['Slug', 'Full Address', 'HC Address ID', 'Street Address', 'Unit', 'City', 'State', 'Zipcode', 'Zipcode Plus4', 'AVM Price Upper', 'AVM Price Lower', 'AVM FSD', 'AVM Quality', 'AVM Price Mean', 'Bedrooms Count', 'Bathrooms Sumary Count', 'RentalAVM PriceMean', 'RentalAVM Price Upper', 'RentalAVM Price Lower', 'RentalAVM FSD', 'RentalAVM Quality', 'Rental Yield', 'Tax Summary Amount', 'Tax Summary Year'];
-const json2csvParser = new Json2csvParser({
-    csvFields
-});
+// const csvFields = ['Slug', 'Full Address', 'HC Address ID', 'Street Address', 'Unit', 'City', 'State', 'Zipcode', 'Zipcode Plus4', 'AVM Price Upper', 'AVM Price Lower', 'AVM FSD', 'AVM Quality', 'AVM Price Mean', 'Bedrooms Count', 'Bathrooms Sumary Count', 'RentalAVM PriceMean', 'RentalAVM Price Upper', 'RentalAVM Price Lower', 'RentalAVM FSD', 'RentalAVM Quality', 'Rental Yield', 'Tax Summary Amount', 'Tax Summary Year'];
+// const json2csvParser = new Json2csvParser({
+//     csvFields
+// });
 
 let strToken = '';
-let arrCSVResult = [];
+// let arrCSVResult = [];
 
 main();
 
 async function main() {
-    const arrSlugs = await csv().fromFile('our-zips.csv');
+    const arrSlugs = await csv().fromFile('test.csv');
+    // const arrSlugs = await csv().fromFile('our-zips.csv');
     console.log("File Imported Successfully!")
-    let objDate = getDate();
 
-    for (let i = 0; i < arrSlugs.length; i++) {
-        console.log("Executed Count ===>", i)
-            ////////////////////// if you want to use proxy then follow this
-            // let sid = Math.floor(Math.random() * 10000000);
+    let concurrency = 10;
+    let runningEvents = 0;
+    let finished = 0;
 
-        // Without sid-${sid} // it rotates automatically.
-        // let proxy_url = "http://AirForceOne-sub-kamakazeevenuecart-cc-row:d7cmO5rk4Tj2@gw.ntnt.io:5959";
+    const finishInterval = setInterval(() => {
+        console.log("Finished: ", finished);
+    }, 1000);
 
+    let promises = [];
 
-        // With sid-${sid} //it sticks. like that. IP will be sticky based on the sid.
-        // let proxy_url = `http://AirForceOne-sub-kamakazeevenuecart-cc-us-sid-${sid}:d7cmO5rk4Tj2@gw.ntnt.io:5959`;
+    let count = arrSlugs.length;
+    for (let i = 0; i < count + 1; i++) {
+        while (runningEvents > concurrency) {
+            await new Promise((resolve) => setTimeout(resolve, 50));
+        }
 
-        // let proxy_url = "http://user:pass@domain:port"
-        /// you can send it to getResponse using parameter
-        await getResponse(arrSlugs[i], objDate);
+        runningEvents++;
+        promises.push(
+            getResponse(arrSlugs[i])
+            .then((result) => {
+                if (result != null) {
+                    exportData(result);
+                } else {
+                    console.log("Slug Data is null!", arrSlugs[i]);
+                }
+                runningEvents--;
+                finished++;
+            })
+            .catch((e) => console.log(e))
+        );
     }
 
-    const csvData = json2csvParser.parse(arrCSVResult);
-    fs.writeFile("results.csv", csvData, function(error) {
-        if (error) throw error;
-        console.log("Write to results.csv successfully!");
-    });
+    console.log("finished1 ------------------");
+    await Promise.all(promises);
+    console.log("finished2 ------------------");
+    clearInterval(finishInterval);
+
+    // const csvData = json2csvParser.parse(arrCSVResult);
+    // fs.writeFile("results.csv", csvData, function(error) {
+    //     if (error) throw error;
+    //     console.log("Write to results.csv successfully!");
+    // });
 }
 
-async function getResponse(objSlug, objDate, bAuth = true) {
+async function getResponse(objSlug, bAuth = true) {
     try {
 
         let strSlug = objSlug.Address.split(" ").join('-') + '-' +
@@ -55,7 +75,7 @@ async function getResponse(objSlug, objDate, bAuth = true) {
 
         // console.log(strSlug);
 
-        if (!bAuth) {
+        if (!bAuth || strToken == '') {
             let strTokenResponse = await axios.get("https://www.comehome.com/property-details/" + strSlug);
             strToken = strTokenResponse.data.split('status":"SUCCESS","token":"')[1].split('",')[0];
         }
@@ -84,23 +104,13 @@ async function getResponse(objSlug, objDate, bAuth = true) {
             "data": JSON.stringify({
                 query: strQuery,
                 variables: {
-                    dateFiveYearsAgo: objDate.fiveAgo,
-                    dateOneYearAhead: objDate.oneAhead,
-                    dateThreeYearsAhead: objDate.threeAhead,
                     slug: strSlug
                 }
             }),
             "method": "POST"
         });
 
-        console.log(response.status);
-        if (response.status == 200) {
-            if (response.data.data.propertyLookup == null) {
-                console.log("Response Data is null!");
-            } else {
-                exportData(response.data.data.propertyLookup);
-            }
-        }
+        return response.data.data.propertyLookup;
     } catch (error) {
 
         console.log(error.message);
@@ -108,29 +118,12 @@ async function getResponse(objSlug, objDate, bAuth = true) {
             console.log(error.response.status);
 
             if (error.response.status == 401) {
-                await getResponse(objSlug, objDate, false);
+                await getResponse(objSlug, false);
             }
         }
+
+        return null;
     }
-}
-
-function getDate() {
-    var date = new Date(),
-        month = '' + (date.getMonth() + 1),
-        day = '' + date.getDate(),
-        year = date.getFullYear();
-
-    if (month.length < 2)
-        month = '0' + month;
-    if (day.length < 2)
-        day = '0' + day;
-
-    let response = {};
-    response.fiveAgo = [year - 5, month, day].join('-');
-    response.oneAhead = [year + 1, month, day].join('-');
-    response.threeAhead = [year + 3, month, day].join('-');
-
-    return response;
 }
 
 function exportData(data) {
@@ -165,5 +158,8 @@ function exportData(data) {
     objResult.data__propertyLookup__latestAssessment__taxSummary__amount = data.latestAssessment ? data.latestAssessment.taxSummary.amount : null;
     objResult.data__propertyLookup__latestAssessment__taxSummary__year = data.latestAssessment ? data.latestAssessment.taxSummary.year : null;
 
-    arrCSVResult.push(objResult);
+    let temp = [];
+    temp.push(objResult);
+    new ObjectsToCsv(temp).toDisk('results.csv', { append: true });
+    // arrCSVResult.push(objResult);
 }
